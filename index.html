@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Carolins Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
@@ -14,23 +14,24 @@
 
 
     <header>
-        <h1>Hello, it's me: Carolin Wagner</h1>
-        <p>Herzlich Willkommen auf meiner Website!</p>
-        <nav class="nav">
+        <h1>Hello, it's me:<br />Carolin Wagner</h1>
+        <p>Willkommen auf meiner Website!</p>
+        <nav>
             <a href="#contact">Kontakt</a>
             <a href="#biography">Biographie</a>
-            <a href="#CV">CV</a>
+            <a href="#Vita">Vita</a>
         </nav>
 
 
     </header>
     <main>
         <figure>
-            <img src="images/carointokyo.jpg" width="600px" alt="Black and white profile photo of a woman in tokyo.">
+            <img class="photo" src="images/carointokyo.jpg" width="600px"
+                alt="Black and white profile photo of a woman in tokyo.">
 
 
 
-            <figcaption>Caro in Tokio</figcaption>
+            <figcaption>Ich in Tokio</figcaption>
         </figure>
         <h2>Interessen</h2>
         <p>
@@ -57,16 +58,23 @@
         <h2>
             <section id="contact">Kontakt</section>
         </h2>
-        <p>Telefon: 0171xxx</p>
-        <p>E-Mail: carolinwagner.ref@gmail.com</p>
+        <p>Telefon: The best time to call me is e-mail.</p>
+        <p><a href="mailto: carolinwagner.ref@gmail.com">E-Mail</a></p>
 
         <h3>Oder finde mich hier:</h3>
-        <p><a href="https://github.com/carolinwagner" target="_blank" rel="noreferrer noopener"><img
-                    src="images/GitHub_Logo.png" width="100px" alt="GitHub"></a>
-            <a href="https://codepen.io/carolinhh" target="_blank" rel="noreferrer noopener"><img
-                    src="images/codepen_Logo.png" width="100px" alt="Codepen"></a>
-            <a href="https://www.linkedin.com/in/carolin-wagner-6135aa17a/" target="_blank"
-                rel="noreferrer noopener"><img src="images/LinkedIn_Logo.png" width="100px" alt="LinkedIn"></a></p>
+        <section class="logos">
+            <div>
+                <a href="https://github.com/carolinwagner" target="_blank" rel="noreferrer noopener"><img
+                        src="images/GitHub_Logo.png" alt="GitHub"></a>
+            </div>
+            <div>
+                <a href="https://codepen.io/carolinhh" target="_blank" rel="noreferrer noopener"><img
+                        src="images/codepen_Logo.png" alt="Codepen"></a>
+            </div>
+            <div><a href="https://www.linkedin.com/in/carolin-wagner-6135aa17a/" target="_blank"
+                    rel="noreferrer noopener"><img src="images/LinkedIn_Logo.png" alt="LinkedIn"></a>
+            </div>
+        </section>
 
         <h2>
             <section id="biography">Biographie</section>
@@ -85,7 +93,7 @@
             Web-Developer könnten sagen, ich sei ein Jura-Nerd.</p>
 
         <h2>
-            <section id="CV">CV</section>
+            <section id="Vita">Vita</section>
         </h2>
         <table>
 
@@ -126,7 +134,7 @@
 
 
             <tr>
-                <td>2014-2019</td>
+                <td>2014-19</td>
                 <td>Wissenschaftliche Mitarbeiterin bei der Kanzlei Johannsen in Hamburg </td>
             </tr>
             <tr>
@@ -152,5 +160,9 @@
 
 
 </body>
+
+
+
+<!-- logos als flexbox und space between -->
 
 </html>

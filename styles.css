@@ -4,22 +4,22 @@
 
 body {
     font-size: 112.5%;
-    padding: 10px 50px;
+    padding: 5% 5%;
     margin: 0;
     font-family: Lato;
-    margin: 20px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1 fr);
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     overflow:scroll;
+    color: #444444;
     
 }
 
 h1 {
     font-family: "Lobster";
     color: #1c7de6;
-    font-size: 280%;
+    font-size: 180%;
+    margin-top: 0;
 
 
 }
@@ -31,10 +31,56 @@ main {
 }
 
 nav {
-    background-color: #d9effa;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    width: auto;
+    background-color: #cecece;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+nav a {
+    color: #1c7de6;
+    text-decoration: none;
+}
 
+nav a:hover {
+   font-weight: 1000;
+   color: #15569c;
+  }
+ 
 
-   
+.photo {
+    border-radius: 8px;
+    width: 100%;
+}
+.logos img {
+    width: 100%;
+    
+}
+
+.logos div {
+    flex: 1;
+}
+.logos {
+    display: flex;
+    justify-content: space-between;
+    
+}
+h2, h3 {
+    color: black;
+}
+
+table {
+    border-spacing: 10px 10px;
+}
+
+td {
+    vertical-align: top;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: smaller;
 }
