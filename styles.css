@@ -12,10 +12,6 @@ body {
   grid-gap: 15px;
 }
 
-#subtitle p {
-  margin: 0;
-}
-
 nav {
   padding: 10px;
   width: auto;
@@ -40,40 +36,6 @@ h1 {
   color: #1c7de6;
   font-size: 2rem;
   margin: 0;
-}
-
-.blueBox {
-  background-color: #d7e9fc;
-  border-radius: 10px;
-  padding: 0 20px;
-}
-
-#contactContainer {
-  padding-bottom: 10px;
-}
-
-#photoContainer img {
-  border-radius: 8px;
-  width: 100%;
-}
-
-#logosContainer img {
-  width: 65%;
-}
-
-#logosContainer div {
-  flex: 1;
-  text-align: center;
-}
-
-#logosContainer {
-  display: flex;
-  justify-content: space-around;
-}
-
-#biographyContainer,
-#vitaContainer {
-  padding: 0 20px;
 }
 
 h2,
@@ -108,6 +70,12 @@ footer {
   font-size: small;
 }
 
+.blueBox {
+  background-color: #d7e9fc;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
 .tags {
   list-style-type: none;
   line-height: 1.5em;
@@ -120,6 +88,38 @@ footer {
   border: 1px solid black;
   border-radius: 8px;
   background-color: #e5eefa;
+}
+
+#contactContainer {
+  padding-bottom: 10px;
+}
+
+#photoContainer img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+#logosContainer img {
+  width: 65%;
+}
+
+#logosContainer div {
+  flex: 1;
+  text-align: center;
+}
+
+#logosContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#biographyContainer,
+#vitaContainer {
+  padding: 0 20px;
+}
+
+#subtitle p {
+  margin: 0;
 }
 
 @media (min-width: 550px) {
