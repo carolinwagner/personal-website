@@ -7,28 +7,28 @@ body {
     padding: 5% 5%;
     margin: 0;
     font-family: Lato;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow:scroll;
     color: #444444;
-    
 }
 
-h1 {
-    font-family: "Lobster";
-    color: #1c7de6;
-    font-size: 180%;
-    margin-top: 0;
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+} 
 
+ #title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}  
 
+#subtitle {
+    grid-column: 1 / 3;
+    grid-row: 2 /3;
 }
-
-main {
-    overflow: scroll;
-
-
-}
+#navbar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+} 
 
 nav {
     padding: 20px;
@@ -37,7 +37,6 @@ nav {
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 nav a {
@@ -48,26 +47,62 @@ nav a {
 nav a:hover {
    font-weight: 1000;
    color: #15569c;
-  }
- 
+}
+h1 {
+    font-family: "Lobster";
+    color: #1c7de6;
+    font-size: 180%;
+    margin-top: 0;
+}
+
+main {
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(6, auto);
+}
+
+.gridFoto {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin: 80px;
+}
+
+.gridInteressen {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(236, 245, 248);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.gridFähigkeiten {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(177, 199, 206);
+    border-radius: 10px;
+    padding: 20px;
+}
 
 .photo {
     border-radius: 8px;
     width: 100%;
 }
+
 .logos img {
     width: 100%;
-    
 }
 
 .logos div {
     flex: 1;
 }
+
 .logos {
     display: flex;
     justify-content: space-between;
-    
 }
+
 h2, h3 {
     color: black;
     margin-top: 50px;
@@ -89,28 +124,27 @@ figcaption {
 
 footer {
     color: #A8A89F
+    grid-column: 1 / 3;
+    grid-row:
+
 }
+
 .listItems {
     list-style-type: circle;
 } 
 
-
 @media (min-width: 550px){
-   br {display: none; 
+   br {
+       display: none; 
    }
 }
 
 @media (min-width: 800px){
-   h1 {
-       font-size: 250%;
-   } 
-   .logos img{
-          width: 50%;         
-    }
+    h1 {
+        font-size: 250%;
+    } 
     
-
-}
-
-.container {
-    color:  #A8A89F;
+    .logos img{
+        width: 50%;         
+    }
 }
