@@ -8,36 +8,39 @@ body {
     margin: 0;
     font-family: Lato;
     color: #444444;
+    display: grid;
+    grid-gap: 15px;
 }
 
-header {
+/* header {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-} 
+}  */
 
  #title {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 2; */
 }  
 
-#subtitle {
-    grid-column: 1 / 3;
-    grid-row: 2 /3;
+#subtitle p {
+    /* grid-column: 1 / 3;
+    grid-row: 2 /3; */
+    margin: 0;
 }
 #navbar {
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3;
     grid-row: 1 / 2;
-    place-self: center stretch;
+    place-self: center stretch; */
 } 
 
 nav {
-    padding: 20px;
+    padding: 10px;
     width: auto;
     background-color: #cecece;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav a {
@@ -53,52 +56,62 @@ h1 {
     font-family: "Lobster";
     color: #1c7de6;
     font-size: 180%;
-    margin-top: 0;
+    margin: 0;
 }
 
-main {
+.blueBox {
+    background-color: #d7e9fc;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+/* main {
     overflow: scroll;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(6, auto);
+} */
+
+.photoContainer {
+    /* grid-column: 1 / 2;
+    grid-row: 1 / 3; */
+
 }
 
-.gridFoto {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    margin: 80px;
-}
-
-.gridInteressen {
-    grid-column: 2 / 3;
+.hobbies {
+    /* grid-column: 2 / 3;
     grid-row: 1 / 2;
-    place-self: center;
-    background-color: #b3d7fc;
+    place-self: center; */
+    /* background-color: #b3d7fc;
     border-radius: 10px;
-    padding: 0 20px;
-    margin: 60px 60px 60px 0; 
+    padding: 0 20px; */
+    
 
 }
 
-.gridFähigkeiten {
-    grid-column: 2 / 3;
+.skills {
+    /* grid-column: 2 / 3;
     grid-row: 2 / 3;
-    place-self: center;
-    background-color: #d7e9fc;
+    place-self: center; */
+    /* background-color: #d7e9fc;
     border-radius: 10px;
-    padding: 0 20px;
-    margin: 0 60px 60px 0; 
+    padding: 0 20px; */
+   
 }
 
-.gridKontakt {
-    grid-column: 1 / 3; 
-    grid-row: 3 / 4; 
-}
+.contact {
+    /* grid-column: 1 / 3; 
+    grid-row: 3 / 4;*/ 
+    /* background-color: #c1dbf7;
+    border-radius: 10px;
+    padding: 0 20px; */
+    padding-bottom: 10px;
+} 
 
-.gridLogos {
-    grid-column: 1 / 3; 
+.logosContainer {
+    /* grid-column: 1 / 3; 
     grid-row: 4 / 5;
-    place-self: center;
+    place-self: center; */
 }
 
 .photo {
@@ -107,11 +120,12 @@ main {
 }
 
 .logos img {
-    width: 100%;
+    width: 65%;
 }
 
 .logos div {
     flex: 1;
+    text-align: center;
 }
 
 .logos {
@@ -119,23 +133,26 @@ main {
     justify-content: space-around;
 }
 
-.gridBiografie {
-    grid-column: 1 / 2; 
+.biographyContainer {
+    /* grid-column: 1 / 2; 
     grid-row: 5 / 6; 
+    place-self: center; */
     padding: 0 20px; 
-    place-self: center;
 }
 
-.gridVita {
-    grid-column: 2 / 3;
+.vita {
+    /* grid-column: 2 / 3;
     grid-row: 5 / 6;
-    place-self: center;
+    place-self: center; */
     padding: 0 20px; 
 }
 
 h2, h3 {
     color: black;
-    margin-top: 50px;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 table {
@@ -146,6 +163,10 @@ td {
     vertical-align: top;
 }
 
+figure {
+    margin: 0;
+}
+
 figcaption {
     font-style: italic;
     font-size: small;
@@ -153,7 +174,7 @@ figcaption {
 }
 
 footer {
-    color: #A8A89F
+    color: #A8A89F;
     font-size: small;
 }
 
@@ -176,7 +197,4 @@ footer {
         margin-top: 10px;
     }
     
-    .logos img{
-        width: 50%;         
-    }
 }
