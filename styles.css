@@ -15,7 +15,7 @@ body {
 nav {
   padding: 10px;
   width: auto;
-  background-color: #cecece;
+  background-color: #f3f1f1;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -78,13 +78,13 @@ footer {
 
 .tags {
   list-style-type: none;
-  line-height: 1.5em;
+  line-height: 2em;
   padding: 0;
 }
 
 .tags li {
   display: inline;
-  padding: 0 15px;
+  padding: 5px 15px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: #e5eefa;
