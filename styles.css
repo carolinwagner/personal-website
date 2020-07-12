@@ -28,6 +28,7 @@ header {
 #navbar {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    place-self: center stretch;
 } 
 
 nav {
@@ -71,18 +72,33 @@ main {
 .gridInteressen {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    background-color: rgb(236, 245, 248);
+    place-self: center;
+    background-color: #b3d7fc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0 20px;
+    margin: 60px 60px 60px 0; 
 
 }
 
 .gridFähigkeiten {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgb(177, 199, 206);
+    place-self: center;
+    background-color: #d7e9fc;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0 20px;
+    margin: 0 60px 60px 0; 
+}
+
+.gridKontakt {
+    grid-column: 1 / 3; 
+    grid-row: 3 / 4; 
+}
+
+.gridLogos {
+    grid-column: 1 / 3; 
+    grid-row: 4 / 5;
+    place-self: center;
 }
 
 .photo {
@@ -100,7 +116,21 @@ main {
 
 .logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.gridBiografie {
+    grid-column: 1 / 2; 
+    grid-row: 5 / 6; 
+    padding: 0 20px; 
+    place-self: center;
+}
+
+.gridVita {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    place-self: center;
+    padding: 0 20px; 
 }
 
 h2, h3 {
@@ -124,9 +154,7 @@ figcaption {
 
 footer {
     color: #A8A89F
-    grid-column: 1 / 3;
-    grid-row:
-
+    font-size: small;
 }
 
 .listItems {
@@ -143,6 +171,10 @@ footer {
     h1 {
         font-size: 250%;
     } 
+
+    h2 {
+        margin-top: 10px;
+    }
     
     .logos img{
         width: 50%;         
